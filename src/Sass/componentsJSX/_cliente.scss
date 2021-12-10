@@ -1,0 +1,70 @@
+.crud {
+  margin-left: 120px;
+  @media screen and (max-width: 1400px) {
+    margin-left: 50px;
+  }
+  .form-container {
+    .form-agregar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      width: 900px;
+      padding-top: 10%;
+      margin-left: 25vw;
+      .input-form {
+        width: 220px;
+        margin-left: 55px;
+        margin-right: 30px;
+        margin-bottom: 80px;
+        padding-left: 5px;
+        background-color: lighten($color: $secondary-color-3, $amount: 97);
+        border-color: rgba(0, 0, 0, 0.193);
+        &:focus {
+          background-color: #fff;
+          box-shadow: 0 0 3pt 2pt $secondary-color-3;
+        }
+      }
+      label {
+        .fas {
+          font-size: 30px;
+          margin-right: 10px;
+        }
+      }
+      #nombre {
+        margin-left: 66px;
+      }
+      #cedula {
+        margin-left: 145px;
+      }
+      #direccion {
+        margin-left: 37px;
+      }
+      #correo {
+        margin-left: 70px;
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      .btn {
+        transition: all 0.2s ease-out;
+        &:hover {
+          background-color: darken($color: $main-color, $amount: 5);
+          color: #fff;
+        }
+      }
+      input {
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.crud-consultar {
+  @media screen and (max-width: 1400px) {
+    margin-left: 150px;
+  }
+}

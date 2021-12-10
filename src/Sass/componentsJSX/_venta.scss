@@ -1,0 +1,121 @@
+.venta-container {
+  margin-left: 30vw;
+  padding-top: 40px;
+  .input-form {
+    width: 190px;
+    padding-left: 10px;
+    background-color: lighten($color: $secondary-color-3, $amount: 97);
+    &:focus {
+      background-color: #fff;
+      box-shadow: 0 0 3pt 2pt $secondary-color-3;
+    }
+  }
+  .button-form {
+    font-size: 15px;
+    width: 100px;
+    &:hover {
+      background-color: darken($color: $main-color, $amount: 5);
+      color: #fff;
+    }
+    border: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1400px) {
+    margin-left: 250px;
+  }
+  label {
+    font-weight: 700;
+  }
+  .informacion-cliente-container {
+    margin-left: 17px;
+    .input-form {
+      margin: 0 10px;
+    }
+    .button-form {
+      margin: 0 10px;
+    }
+  }
+  .crud-productos-container {
+    margin-top: 50px;
+    margin-left: 100px;
+    .tittles-container {
+      display: flex;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 20px;
+      .t-1 {
+        margin-left: 40px;
+      }
+      .t-2 {
+        margin-left: 170px;
+        @media screen and (max-width: 1400px) {
+          margin-left: 200px;
+        }
+      }
+      .t-3 {
+        margin-left: 60px;
+        @media screen and (max-width: 1400px) {
+          margin-left: 70px;
+        }
+      }
+      .t-4 {
+        margin-left: 75px;
+      }
+    }
+    .productos-container {
+      .crud-productos {
+        .input-form {
+          margin-right: 16px;
+          margin-bottom: 10px;
+        }
+        .cantidadProducto {
+          margin-left: 20px;
+          margin-right: 20px;
+          width: 50px;
+        }
+      }
+    }
+    .totales-container {
+      margin-left: 190px;
+      .formulario-envio {
+        #form-envio {
+          padding-top: 30px;
+          display: grid;
+          .labels-envio {
+            label {
+              display: block;
+              margin-top: 30px;
+            }
+          }
+          grid-template-columns: 200px 200px 200px;
+          .totales {
+            .input-form {
+              display: block;
+              margin-top: 20px;
+              background-color: lighten(
+                $color: $secondary-color-3,
+                $amount: 97
+              );
+            }
+          }
+          .envio {
+            padding-top: 20px;
+            .button-form {
+              margin-left: 18px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .error-container {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -300px;
+    @media screen and (max-width: 1400px) {
+      margin-left: 0;
+    }
+  }
+}

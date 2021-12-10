@@ -1,0 +1,35 @@
+.crud-container {
+  position: relative;
+  margin-left: 230px;
+  .selects {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 15%;
+    justify-content: space-evenly;
+    width: 100%;
+    .select-crud {
+      width: 200px;
+      height: 200px;
+      background-color: $main-color;
+      margin-right: 25px;
+      border-radius: 20px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 20px;
+      &:hover {
+        background-color: darken($color: $main-color, $amount: 8);
+      }
+      p {
+        display: block;
+        padding-top: 50px;
+        i {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.producto-container {
+  .tittle-venta {
+    margin-left: 32.6vw;
+  }
+  @media screen and (max-width: 1400px) {
+    .tittle-venta {
+      margin-left: 34vw;
+    }
+  }
+}

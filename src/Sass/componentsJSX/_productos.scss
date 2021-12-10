@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
+
+.producto-container {
+  margin-left: 15vw;
+  margin-bottom: 50px;
+
+  .form-productos {
+    margin-left: 29.6vw;
+    padding-top: 50px;
+  }
+  .total-container {
+    margin-left: 300px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input-form {
+      margin-left: 15px;
+      padding: 4px 0;
+      border: none;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 900;
+      background-color: #fff;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 3pt 2pt $secondary-color-3;
+      }
+    }
+    label {
+      margin-left: -10px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .tittle-producto-container {
+    padding-top: 30px;
+    margin-left: 34.5vw;
+    .tittle {
+      display: inline-block;
+      position: relative;
+      font-family: "Scheherazade New", serif;
+      text-align: center;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: black;
+        top: 1em;
+      }
+      &::before {
+        left: -130px;
+      }
+      &::after {
+        right: -130px;
+      }
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .form-productos {
+      margin-left: 28vw;
+    }
+    .tittle-producto-container {
+      margin-left: 37vw;
+    }
+  }
+}
